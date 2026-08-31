@@ -29,7 +29,7 @@ export default function ExpertisePage() {
           </div>
           <p className="section-heading__lead">
             Plutôt qu’une longue liste d’outils, une lecture par domaines et par
-            niveaux d’utilisation réels — core, working, learning.
+            niveaux d’utilisation réels : core, working, learning.
           </p>
         </header>
 

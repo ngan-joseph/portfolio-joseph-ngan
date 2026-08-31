@@ -79,7 +79,7 @@ export const projects: Project[] = [
   {
     id: "green-qa",
     number: "07",
-    title: "Green QA — Sélection intelligente",
+    title: "Green QA: Sélection intelligente",
     headline: "Test impact analysis",
     description:
       "Prototype de sélection des tests à exécuter en fonction du risque, de la criticité et de l’impact, pour réduire l’empreinte des campagnes de test.",

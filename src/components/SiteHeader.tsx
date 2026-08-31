@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { LanguageToggle } from "./LanguageToggle";
 
 const items = [
   { href: "/", label: "Accueil" },
@@ -51,6 +52,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="header-actions">
+          <LanguageToggle />
           <ThemeToggle />
           <Link className="btn btn--ghost header-contact" href="/contact">
             Contact

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowDownRight, ArrowUpRight, Download } from "lucide-react";
 import { profile } from "@/data/profile";
 import { frameworks, pillars } from "@/data/expertise";
+import { PhotoPortrait } from "@/components/PhotoPortrait";
 
 export default function HomePage() {
   return (
@@ -34,6 +35,7 @@ export default function HomePage() {
         </div>
 
         <aside className="hero__aside" aria-label="Chiffres clés">
+          <PhotoPortrait />
           {profile.stats.map((stat) => (
             <div className="stat" key={stat.label}>
               <span className="stat__value">{stat.value}</span>

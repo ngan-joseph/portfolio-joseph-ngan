@@ -20,7 +20,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    eyebrow: "Automation",
+    eyebrow: "Automatisation",
     title: "Frameworks & industrialisation",
     skills: [
       { name: "Playwright", level: "core" },
@@ -32,7 +32,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    eyebrow: "Quality Engineering",
+    eyebrow: "Ingénierie qualité",
     title: "Mesure & pilotage",
     skills: [
       { name: "Quality metrics", level: "core" },

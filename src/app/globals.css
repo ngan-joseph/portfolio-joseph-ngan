@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* =========================================================
-   Design system — épuré, aérien, un seul accent
+  Design system : épuré, aérien, un seul accent
    ========================================================= */
 
 :root {
@@ -153,6 +153,20 @@ p { margin: 0; }
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .header-actions .nav-burger { display: none; }
 .header-contact { display: inline-flex; }
+.language-toggle {
+  min-height: 40px; padding: 0 10px; border-radius: 999px;
+  border: 1px solid var(--line-strong); background: var(--surface);
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+  transition: border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+.language-toggle:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+.portrait { position: relative; min-height: 410px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 6px; }
+.portrait::before { content: ""; position: absolute; width: 78%; aspect-ratio: 1; border-radius: 50%; background: var(--accent-soft); top: 10%; left: 11%; }
+.portrait__halo { position: absolute; width: 88%; height: 74%; border: 1px solid var(--accent); border-radius: 48% 52% 46% 54%; opacity: .35; transform: rotate(-8deg); }
+.portrait img { position: relative; z-index: 1; width: min(100%, 330px); height: 410px; object-fit: cover; object-position: center top; border-radius: 48% 48% 12px 12px; mix-blend-mode: multiply; filter: saturate(.92); }
+[data-theme="dark"] .portrait img { mix-blend-mode: normal; filter: saturate(.86) brightness(.82); }
+.portrait__caption { position: absolute; z-index: 2; right: 2%; bottom: 10px; padding: 5px 9px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--muted); font-size: 10px; }
 .mobile-menu {
   position: fixed; inset: 76px 0 0 0;
   background: var(--bg);
@@ -412,6 +426,9 @@ p { margin: 0; }
   .framework { grid-template-columns: 44px 1fr; }
   .framework__text { grid-column: 1 / -1; }
   .mobile-menu { inset: 64px 0 0 0; }
+  .language-toggle { padding: 0 8px; }
+  .portrait { min-height: 350px; }
+  .portrait img { height: 350px; width: min(100%, 280px); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

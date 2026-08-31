@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { LanguageProvider } from "@/components/LanguageProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -47,9 +48,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body>
         <ThemeProvider>
-          <SiteHeader />
-          {children}
-          <SiteFooter />
+          <LanguageProvider>
+            <SiteHeader />
+            {children}
+            <SiteFooter />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

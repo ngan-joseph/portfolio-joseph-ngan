@@ -128,7 +128,7 @@ export const bragItems: BragItem[] = [
     sortKey: 20240915,
     category: "talks",
     impact: "techlead",
-    title: "ISTQB® Advanced Level — Test Manager",
+    title: "ISTQB® Advanced Level: Test Manager",
     description:
       "Certification internationale validant la maîtrise de la stratégie, du pilotage et de l’amélioration continue des activités de test.",
     tags: ["Certification", "Test Management"],
@@ -140,7 +140,7 @@ export const bragItems: BragItem[] = [
     sortKey: 20220501,
     category: "talks",
     impact: "senior",
-    title: "ISTQB® Foundation Level — Agile Tester",
+    title: "ISTQB® Foundation Level: Agile Tester",
     description:
       "Fondamentaux du test en environnement Agile, collaboration produit et cycle de livraison itératif.",
     tags: ["Certification", "Agile"],
