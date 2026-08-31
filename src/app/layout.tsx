@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Fraunces, Instrument_Serif, Inter } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -17,6 +17,14 @@ const fraunces = Fraunces({
   weight: ["400", "500", "600"],
   display: "swap",
   variable: "--font-serif-family",
+});
+
+const signature = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-signature-family",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="fr"
-      className={`${inter.variable} ${fraunces.variable}`}
+      className={`${inter.variable} ${fraunces.variable} ${signature.variable}`}
       suppressHydrationWarning
     >
       <head>

@@ -7,11 +7,14 @@ export const profile = {
     "Je transforme la stratégie de test en solutions concrètes, automatisables et mesurables.",
   positioning:
     "J’aide les équipes produit et IT à structurer leur stratégie de test, industrialiser l’automatisation et rendre la qualité mesurable.",
-  headline: {
-    prefix: "Test Lead ·",
-    accent: "Quality Engineering",
-    suffix: "· Coaching QA",
-  },
+  roleTitle: "Référent Technique Test & Sr. Test Lead",
+  employer: "AXA France",
+  employmentSince: "Depuis octobre 2022",
+  keywords: [
+    { fr: "Ingénierie Qualité", en: "Quality Engineering" },
+    { fr: "Automatisation", en: "Automation" },
+    { fr: "Stratégie de test", en: "Test strategy" },
+  ],
   cvHref: "/cv-joseph-ngan-mintamak.pdf",
   email: "b.mintamak@gmail.com",
   linkedin: "https://www.linkedin.com/in/joseph-ngan",
